@@ -1,26 +1,22 @@
 {
-  "name": "mern-project",
+  "name": "pavalan",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontend/front-end && npm run build --prefix frontend/front-end",
-    "start": "cross-env NODE_ENV=production node backend/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start":"npm start --prefix backend"
   },
-  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavalanganesan2368/mern-stack-project.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "dotenv": "^17.2.0",
-    "express": "^5.1.0",
-    "mongoose": "^8.16.4",
-    "react-icons": "^5.5.0",
-    "react-router-dom": "^7.7.1"
+  "bugs": {
+    "url": "https://github.com/Pavalanganesan2368/mern-stack-project/issues"
   },
-  "devDependencies": {
-    "cross-env": "^10.0.0",
-    "nodemon": "^3.1.10"
-  }
+  "homepage": "https://github.com/Pavalanganesan2368/mern-stack-project#readme"
 }
